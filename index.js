@@ -1,7 +1,7 @@
 var console = require("console")
 var http = require("http")
 var uuid = require("node-uuid")
-var PORT = 8123
+var PORT = process.argv[2] || 8123
 
 var clientList = []
 

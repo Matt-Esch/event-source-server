@@ -19,7 +19,7 @@
   },
   "testling": {
     "files": "tests/*.js",
-    "server": "index.js",
+    "server": "node index.js 53432",
     "browsers": [
       "iexplore/*",
       "chrome/*",
