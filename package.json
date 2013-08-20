@@ -21,16 +21,17 @@
     "files": "tests/*.js",
     "server": "node index.js 53432",
     "browsers": [
-      "iexplore/*",
-      "chrome/*",
-      "firefox/*",
-      "opera/*",
-      "safari/*",
-      "opera/*",
-      "iphone/*",
-      "ipad/*",
-      "safari/*",
-      "android-browser/*"
+      "ie/8..latest",
+      "firefox/16..latest",
+      "firefox/nightly",
+      "chrome/22..latest",
+      "chrome/canary",
+      "opera/12..latest",
+      "opera/next",
+      "safari/5.1..latest",
+      "ipad/6.0..latest",
+      "iphone/6.0..latest",
+      "android-browser/4.2..latest"
     ]
   }
 }
