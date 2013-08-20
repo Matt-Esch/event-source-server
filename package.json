@@ -1,0 +1,36 @@
+{
+  "name": "event-source-server",
+  "version": "0.0.0",
+  "description": "event source server",
+  "main": "index.js",
+  "scripts": {
+    "test": "tapedeck tests/index.js -p"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "node-uuid": "~1.4.1",
+    "global": "~2.0.7"
+  },
+  "devDependencies": {
+    "tape": "~1.0.4",
+    "tapedeck": "~0.3.4"
+  },
+  "testling": {
+    "files": "tests/*.js",
+    "server": "index.js",
+    "browsers": [
+      "iexplore/*",
+      "chrome/*",
+      "firefox/*",
+      "opera/*",
+      "safari/*",
+      "opera/*",
+      "iphone/*",
+      "ipad/*",
+      "safari/*",
+      "android-browser/*"
+    ]
+  }
+}
