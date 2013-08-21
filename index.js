@@ -1,9 +1,7 @@
 var console = require("console")
 var http = require("http")
-var uuid = require("node-uuid")
-var PORT = process.argv[2] || 8123
-
-var clientList = []
+var setInterval = require("timers").setInterval
+var PORT = process.argv[2] || 53432
 
 http.createServer(handleRequest).listen(PORT, function () {
     console.log("Listening on port ", + PORT)
@@ -11,12 +9,11 @@ http.createServer(handleRequest).listen(PORT, function () {
 
 
 function handleRequest(req, res) {
-    var clientId = uuid()
     eventSourceHead(req, res)
     keepalive(req, res)
     res.socket.setTimeout(0)
 
-    res.write("data: hello world")
+    res.write("data: hello world\n\n")
 }
 
 var DEFAULT_INTERVAL = 15000
